@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+
+    <title>My First Email Template Project</title>
+
+
+    <!-- BEGINNING OF STYLING -->
+    <style type="text/css" >
+    
+    /* START of the UNIVERSAL styling */
+    /* removing the unnecessary spacing */
+    body {
+        margin: 0;
+        border-width: 2px;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    img {
+        border: 0;
+    }
+
+    /*universal email template styling!!*/
+    /*around the mail template! */
+    .wrapper {
+        width: 100%;
+        /* re-enforced centering */
+        table-layout: fixed;
+        background-image: url("https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fc6c8b5053d1fded25_banner.jpg");
+        background-size: cover;
+        /* separating the template from the browser! */
+        padding: 50px 0;
+    }
+    /*universal styling!!*/
+    /* THE mail template! */
+    .main {
+        width: 100%;
+        max-width: 604px;
+        text-align: center;
+        background-color: #ebd264; 
+        border-spacing: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        border: 2px solid black;
+    }
+    /* END of the UNIVERSAL styling */
+
+
+
+    /* ALL ABOUT FONTS */
+    @font-face {
+        font-family: "vaselina";
+        src: url(../fonts/Veselina\ -\ Script.otf);
+    }
+    h4, h2, .button {
+        font-family: "vaselina";
+    }
+    p {
+        font-family: 'Dosis', Courier, monospace;
+    }
+
+
+    
+    /* LOGO SECTION */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* SALE DESCRIPTION */
+    .sale-description {
+        padding: 40px 40px 20px 40px;
+        line-height: 30px;
+    }
+
+    .the-button-row {
+        padding-bottom: 50px;
+    }
+
+
+    /* DEALS section */
+    /* every deal */
+    .deal {
+        width: 100%;
+        max-width: 300px; 
+        padding-bottom: 20px;
+        float: left;
+    }
+    /* pricetags and item descriptions */
+    .price-item {
+        line-height: 2px;
+        padding: 5px 0;
+    }
+
+    /* link styling in THE DEALS */
+    .button {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .button:hover {
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+        transition-duration: 1s;
+    }
+
+    /* the ending text */
+    .ending-text {
+        font-size: 9px;
+        padding: 15px 0;
+    }
+    
+    /* link styling in THE ENDING TEXT */
+    .ending-text a {
+        text-decoration: underline double;
+        color: black;
+    }
+
+    .ending-text a:hover {
+        color: blue;
+    }
+
+
+    /* END OF STYLING */
+    </style>
+
+</head>
+
+
+<body>
+    <!-- beginning of the mail template -->
+    <center class="wrapper">
+        <!-- this is the beginning of the "main table." -->
+        <table class="main" width="100%">
+
+            <!-- LOGO SECTION -->
+            <tr>
+                <td style="padding: 5px 0; border-bottom: 2px solid black;" >
+                    <table width="100%">
+                        <tr>
+                            <td class="logo">
+                                <img src="https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fbce4fe70e40c28b46_mush_logo.png" alt="" width="50">
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+            <!-- BANNER IMAGE SECTION -->
+            <tr>
+                <td>
+                    <a href="https://www.surfstationstore.com " target="_blank">
+                    <img src="https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fca047928013117bc0_banner-overlay.jpg" alt="Banner" title="learn more!" 
+                    width="604px" style="max-width: 100%;"></a>
+                </td>
+            </tr>
+
+            <!-- SALE DESCRIPTION -->
+            <tr>
+                <td style="border-top: 2px solid black;">
+                    <table width = "100%">
+                        <!-- text -->
+                        <tr>
+                            <td class="sale-description">
+                                <h2>NEW SURFBOARD DEALS!</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Ipsa, repellat. Similique vel quisquam id, repellendus 
+                                    placeat distinctio. Quis nemo molestiae impedit quisquam 
+                                    tempore?</p>
+                            </td>
+                        </tr>
+                        <!-- button -->
+                        <tr>
+                            <td class="the-button-row">
+                                <a href="#" class="button">VIEW ALL DEALS</a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+            <!-- the DEALS -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="the-deals" style="border-top: 2px solid black; border-bottom: 2px solid black;">
+
+                                <!-- beginning: the 1st deal -->
+                                <table class="deal" style="background-color: #e77e7e;">
+
+                                    <!-- surfboard picture -->
+                                    <tr>
+                                        <td width="300px" >
+                                            <img src="https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fbe10f7363224ba309_circled_red_surf.png" alt="" width="150px" 
+                                            style="padding-top: 20px;">
+                                        </td>
+
+                                    <!-- item name and pricetag -->
+                                    <tr>
+                                        <td class="price-item">
+                                            <h4>SURF STATION GATOR</h4>
+                                            <h4>$299</h4>
+                                        </td>
+                                    </tr>
+
+                                    <!-- button -->
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.surfstationstore.com/collections
+                                            /clearance-surfboards-sale/products
+                                            /surf-station-gator-discount-surfboard" class="button">BUY NOW</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end of the 1st deal -->
+
+                                <!-- beginning: the 2nd deal -->
+                                <table class="deal" style="background-color: #ebd264;">
+
+                                    <!-- surfboard picture -->
+                                    <tr>
+                                        <td width="300px" >
+                                            <img src="https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fcee590479b9b6c928_circled_orange_surf.png" alt="" width="150px" 
+                                            style="padding-top: 20px;">
+                                        </td>
+
+                                    <!-- item name and pricetag -->
+                                    <tr>
+                                        <td class="price-item">
+                                            <h4>SURF STATION FRO BACK</h4>
+                                            <h4>$413</h4>
+                                        </td>
+                                    </tr>
+
+                                    <!-- button -->
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.surfstationstore.com/collections
+                                            /clearance-surfboards-sale/products
+                                            /surf-station-gator-discount-surfboard" class="button">BUY NOW</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end of the 2nd deal -->
+
+                                <!-- beginning: the 3rd deal -->
+                                <table class="deal" style="background-color: #87b2e2;">
+
+                                    <!-- surfboard picture -->
+                                    <tr>
+                                        <td width="300px" >
+                                            <img src="https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fcee59048575b6c927_circled_blue_surf.png" alt="" width="150px" 
+                                            style="padding-top: 20px;">
+                                        </td>
+
+                                    <!-- item name and pricetag -->
+                                    <tr>
+                                        <td class="price-item">
+                                            <h4>SURF STATION DREDGER</h4>
+                                            <h4>$320</h4>
+                                        </td>
+                                    </tr>
+
+                                    <!-- button -->
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.surfstationstore.com/collections
+                                            /clearance-surfboards-sale/products
+                                            /surf-station-gator-discount-surfboard" class="button">BUY NOW</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end of the 3rd deal -->
+
+                                <!-- beginning: the 4th deal -->
+                                <table class="deal" style="background-color: #84d0c1;">
+
+                                    <!-- surfboard picture -->
+                                    <tr>
+                                        <td width="300px" >
+                                            <img src="https://uploads-ssl.webflow.com/63e690e16c8b507e84fdea75/63e690fbc67db3ca17dc4392_circled_white_surf.png" alt="" width="150px" 
+                                            style="padding-top: 20px;">
+                                        </td>
+
+                                    <!-- item name and pricetag -->
+                                    <tr>
+                                        <td class="price-item">
+                                            <h4>SURF STATION TARANTULA</h4>
+                                            <h4>$299</h4>
+                                        </td>
+                                    </tr>
+
+                                    <!-- button -->
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.surfstationstore.com/collections
+                                            /clearance-surfboards-sale/products
+                                            /surf-station-gator-discount-surfboard" class="button">BUY NOW</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- end of the 4th deal -->
+                                
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+            <!-- THE ENDING TEXT: small text -->
+            <tr>
+                <td class="ending-text">
+                    <p>Newsletter created by Martina Kolar for design demonstration purposes.</p>
+                    <p>All of the surfboard deals were taken from the <a href="https://www.surfstationstore.com">Surf Station Store site</a></p>
+                </td>
+            </tr>
+
+
+
+            <!-- END of the mail template -->
+        </table>
+    </center>
+    
+</body>
+</html>
